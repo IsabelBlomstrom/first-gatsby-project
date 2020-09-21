@@ -35,7 +35,9 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
         <footer style={{
-          marginTop: `2rem`
+          marginTop: `2rem`,
+          background: `rebeccapurple`,
+          color: `white`
         }}>
           © {new Date().getFullYear()}, Built with
           {` `}
