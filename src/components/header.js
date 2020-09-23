@@ -1,8 +1,9 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import "./layout.css"
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <header
     style={{
       background: `#ffb3ba`,
@@ -12,8 +13,7 @@ const Header = ({ siteTitle }) => (
     <div
       style={{
         margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
+        padding: `1.5rem 1rem`,
       }}
     >
       <h1 style={{ margin: 0 }}>
@@ -22,12 +22,37 @@ const Header = ({ siteTitle }) => (
           style={{
             color: `white`,
             textDecoration: `none`,
+            margin: `0.5rem`,
           }}
         >
-          {siteTitle}
+          Pastel Pipe
         </Link>
       </h1>
     </div>
+    
+    <div 
+    className="nav-links">    
+        <div><Link
+          to="/page-2/"
+          style={{
+            color: `white`,
+            textDecoration: `none`,
+            margin: `0.5rem`,
+          }}
+        >
+          About
+        </Link>
+        </div>
+        <div>
+        <Link to="/page-3/"
+        style={{
+          color: `white`,
+          textDecoration: `none`,
+        }}>
+          Contact
+          </Link> 
+          </div>
+      </div>
   </header>
 )
 

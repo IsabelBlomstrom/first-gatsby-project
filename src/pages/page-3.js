@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 
 const pageThree = () => (
   <Layout>
-    <h1>This is the third page</h1>
+    <h1>Contact</h1>
     <Link to="/">Home</Link> <br />
 
   </Layout>
