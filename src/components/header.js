@@ -44,7 +44,7 @@ const Header = () => (
         </Link>
         </div>
         <div>
-        <Link to="/page-3/"
+        <Link to="/contact/"
         style={{
           color: `white`,
           textDecoration: `none`,
