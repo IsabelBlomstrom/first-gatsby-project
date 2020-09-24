@@ -1,8 +1,8 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+import imageCar from "../images/pastel-car.jpg"
 
 const IndexPage = () => (
   <Layout>
@@ -14,8 +14,8 @@ const IndexPage = () => (
       cupiditate corrupti possimus, nobis laudantium. Itaque temporibus 
       quae tenetur reprehenderit. Dolores quibusdam similique optio!</p>
 
-    <div style={{ maxWidth: `400px`, marginBottom: `1.45rem` }}>
-      <Image />
+    <div className="imgDiv">
+      <img src={imageCar} width="300" height="auto" alt="car" />
     </div>
   </Layout>
 )

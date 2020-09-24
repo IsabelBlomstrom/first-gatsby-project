@@ -1,5 +1,5 @@
 import React from "react"
-import Image2 from "../components/image2"
+import imageClock from "../images/pastel-clock.jpg"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -17,8 +17,9 @@ const SecondPage = () => {
       Consequatur, rerum? Eum ducimus, porro rerum ipsa perferendis 
       vero nulla non optio veniam ea officia! Dolorum placeat 
       architecto reprehenderit odit ratione in?</p>
-    <div style={{ maxWidth: `400px`, marginBottom: `1.45rem` }}>
-      <Image2 />
+
+    <div className="imgDiv">
+    <img src={imageClock} width="300" height="auto" alt="clock" />
     </div>
   </Layout>
   )

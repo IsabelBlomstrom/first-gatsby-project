@@ -42,7 +42,25 @@ link {
   text-decoration: none;
 }
 
-/*FIX FOOTER*/ 
+Form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.imgDiv {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
 
 article,
 aside,
@@ -138,7 +156,7 @@ img {
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
-  padding-bottom: 0;
+  padding-bottom: 2rem;
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
