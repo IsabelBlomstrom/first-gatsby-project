@@ -1,5 +1,6 @@
 import React from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
+import PropTypes from "prop-types"
 
 const Contactform = () => (
   <div>
@@ -8,6 +9,9 @@ const Contactform = () => (
       initialValues={{ name: '', email: '', message: '' }}
       validate={values => {
         const errors = {};
+        if(!values.name){
+          errors.name = 'Required';
+        }
         if (!values.email) {
           errors.email = 'Required';
         } else if (
@@ -34,7 +38,7 @@ const Contactform = () => (
           <ErrorMessage name="email" component="div" />
           Message:
           <textarea name="text" rows="10" cols="30" />
-          <button type="submit" disabled={isSubmitting}>
+          <button className="submit" type="submit" disabled={isSubmitting}>
             Submit
           </button>
         </Form>
@@ -42,5 +46,11 @@ const Contactform = () => (
     </Formik>
   </div>
 );
+
+Contactform.propTypes = {
+name: PropTypes.string.isRequired,
+email: PropTypes.string,
+message: PropTypes.string
+}
 
 export default Contactform;

@@ -3,6 +3,22 @@ import PropTypes from "prop-types"
 import React from "react"
 import "./layout.css"
 
+/* function time() {
+  // Fetches hours, minutes and seconds
+  let time = new Date();
+  let currentTime =
+      String(time.getHours()).padStart(2, '0') + ":" +
+      String(time.getMinutes()).padStart(2, '0') + ":" +
+      String(time.getSeconds()).padStart(2, '0');
+
+  // Prints time
+  document.querySelector(".time").innerText = currentTime;
+}
+
+time()
+setInterval(time, 1000); */
+
+
 const Header = () => (
   <header
     style={{
@@ -10,9 +26,8 @@ const Header = () => (
       marginBottom: `1.45rem`,
     }}
   >
-    <div
+    <div 
       style={{
-        margin: `0 auto`,
         padding: `1.5rem 1rem`,
       }}
     >
@@ -33,26 +48,19 @@ const Header = () => (
     <div 
     className="nav-links">    
         <div><Link
-          to="/page-2/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-            margin: `0.5rem`,
-          }}
-        >
+        className="link"
+          to="/page-2/">
           About
         </Link>
         </div>
         <div>
-        <Link to="/contact/"
-        style={{
-          color: `white`,
-          textDecoration: `none`,
-        }}>
+        <Link className="link" to="/contact/">
           Contact
           </Link> 
           </div>
+          <div className="time"></div>
       </div>
+      
   </header>
 )
 
