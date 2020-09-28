@@ -3,23 +3,19 @@ import PropTypes from "prop-types"
 import React from "react"
 import "./layout.css"
 
-/* function time() {
-  // Fetches hours, minutes and seconds
+
+function Header(){
+ /*  
   let time = new Date();
+
   let currentTime =
       String(time.getHours()).padStart(2, '0') + ":" +
       String(time.getMinutes()).padStart(2, '0') + ":" +
-      String(time.getSeconds()).padStart(2, '0');
-
-  // Prints time
-  document.querySelector(".time").innerText = currentTime;
-}
-
-time()
-setInterval(time, 1000); */
+      String(time.getSeconds()).padStart(2, '0')
+      setInterval(time, 1000); */
 
 
-const Header = () => (
+  return(
   <header
     style={{
       background: `#ffb3ba`,
@@ -62,7 +58,7 @@ const Header = () => (
       </div>
       
   </header>
-)
+)}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
